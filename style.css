@@ -1,0 +1,134 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+html {
+    background-color: hsl(0, 0%, 94%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} 
+/* body {
+    position: relative;
+} */
+
+
+/* main white box */
+.container {
+    border-radius: 20px;
+    border-bottom-right-radius: 150px;
+    background-color: hsl(0, 0%, 100%);
+    width: 670px;
+    height: 500px;
+    padding: 3%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/* the input boxes div */
+.item {
+    flex-direction: column;
+    margin: 3%;
+    margin-left: 0;
+}
+.item label {
+    color: hsl(0, 1%, 44%);
+    font-size: small;
+    letter-spacing: 3px;
+}
+.item input {
+    width: 130px;
+    height: 60px;
+    margin-top: 5%;
+    padding: 12px;
+    border: solid 1px hsl(0, 0%, 86%);
+    border-radius: 8px;
+    font-size: 32px;
+    color: hsl(0, 1%, 44%);
+    caret-color: hsl(0, 0%, 86%);
+}
+.item input:hover {
+    cursor: pointer;
+    border-color: hsl(0, 1%, 44%);
+}
+.item input:focus {
+    cursor: pointer;
+    outline: none;
+    border-color: hsl(0, 1%, 44%);
+    color: hsl(0, 0%, 8%);
+}
+input:valid {
+    color: hsl(0, 0%, 8%);
+}
+.error {
+    font-size: 8pt;
+    color: hsl(0, 100%, 67%);
+    font-style: italic;
+    margin-top: 5px;
+}
+
+
+/* button */
+.button-div {
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+.line {
+    background-color: hsl(0, 0%, 86%);
+    width: 500px;
+    height: 1px;
+}
+button {
+    padding: 10px;
+    border: 0;
+    height: 65px;
+    width: 65px;
+    border-radius: 50px;
+    background-color: hsl(259, 100%, 65%);
+}
+button:hover {
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+
+/* final answer after calculation part */
+.result {
+    flex-direction: column;
+    width: 400px;
+    height: 240px;
+    font-size: 67px;
+}
+.result .age div {
+    margin-bottom: -20px;
+    font-weight: 800;
+    font-style: italic;
+    color: hsl(0, 0%, 8%);
+}
+.result .age .dash {
+    color: hsl(259, 100%, 65%);
+    margin-right: 8px;
+}
+
+
+/* ------ utilities ------- */
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.flex {
+    display: flex;
+}

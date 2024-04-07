@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+  rel="stylesheet">
+  
+  <title>Age calculator app</title>
+</head>
+
+<body>
+  <div class="container center flex">
+    
+    <!-- input form -->
+    <form action="" class="flex">
+      <div class="day item flex">
+        <label>DAY</label>
+        <input type="text" name="day" placeholder="DD" required>
+        <div class="error"></div>
+      </div>
+      
+      <div class="month item flex">
+        <label>MONTH</label>
+        <input type="text" name="month" placeholder="MM" required>
+        <div class="error"></div>
+      </div>
+      
+      <div class="year item flex">
+        <label>YEAR</label>
+        <input type="text" name="year" placeholder="YYYY" required>
+        <div class="error"></div>
+      </div>
+    </form>
+
+    <!-- button -->
+    <div class="button-div flex">
+      <div class="line"></div>
+
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="44" viewBox="0 0 46 44">
+          <g fill="none" stroke="#FFF" stroke-width="2">
+            <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+          </g>
+        </svg>
+      </button>
+    </div>
+    
+    <!-- result -->
+    <div class="result flex">
+      <div class="flex age">
+        <div id="y" class="dash">- -</div>
+        <div>years</div>
+      </div>
+      
+      <div class="flex age">
+        <div id="m" class="dash">- -</div>
+        <div>months</div>
+      </div>
+      
+      <div class="flex age">
+        <div id="d" class="dash">- -</div>
+        <div>days</div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
